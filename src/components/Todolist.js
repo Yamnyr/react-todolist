@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, TextField } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import DoneIcon from '@mui/icons-material/Done';
 
 function Todolist() {
     const [input, setInput] = useState(""); // State pour stocker la valeur de l'input
@@ -39,15 +40,16 @@ function Todolist() {
             <div className={"input"}>
                 <TextField
                     className={"textfield"}
-                    color={"info"}
+                    // color={"noe"}
                     focused
                     fullWidth
                     id="outlined-basic"
-                    label="Outlined"
-                    variant="outlined"
+                    // label="Outlined"
+                    // variant="outlined"
                     value={input}
+
                     onChange={handleInputChange} // Utiliser la fonction de gestionnaire d'événements pour mettre à jour l'input
-                    inputProps={{ style: { color: '#fdf0d5' } }}
+                    inputProps={{ style: { color: '#edf2f4' } }}
                 />
                 <Button
                     className={"valid"}
@@ -67,7 +69,7 @@ function Todolist() {
                             className={"delete"}
                             variant="contained"
                             onClick={() => removeTodo(index)} // Utiliser la fonction de supression de todo
-                        ><DeleteOutlineIcon />
+                        ><DoneIcon />
                         </Button>
                     </div>
                 ))}
