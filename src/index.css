@@ -14,7 +14,13 @@ code {
     monospace;
 }
 
+Button.valid{
+  background-color: #669bbc;
+}
 
+Button.valid:hover{
+  background-color: #003049;
+}
 .container{
   width: 50%;
   height: 50%;
@@ -51,6 +57,7 @@ div.row{
   flex-direction: row;
   padding: 10px;
   margin: 20px;
+  color: #003049;
   border-radius: 5px;
   background-color: #669bbc;
   /*font-weight: bold;*/
